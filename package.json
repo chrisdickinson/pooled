@@ -1,6 +1,6 @@
 {
   "name": "pooled",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "mutate constructors into a poolable form",
   "main": "index.js",
   "scripts": {
