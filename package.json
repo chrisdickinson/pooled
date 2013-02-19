@@ -1,0 +1,21 @@
+{
+  "name": "pooled",
+  "version": "0.0.0",
+  "description": "mutate constructors into a poolable form",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chrisdickinson/pooled.git"
+  },
+  "keywords": [
+    "pooled"
+  ],
+  "author": "Chris Dickinson <chris@neversaw.us>",
+  "license": "MIT",
+  "devDependencies": {
+    "tape": "~0.2.2"
+  }
+}
