@@ -33,12 +33,11 @@ Point.allocate(100, 12, 21, 1)  // preallocate 100 Point objects
 
 ## API
 
-#### newcons = pooled(cons[, shouldSeal=true])
+#### newcons = pooled(cons[, shouldSeal=false])
 
 Create a pooled constructor from an existing constructor.
 
-By default, new objects will be sealed -- after the constructor is run, no new
-properties can be added to them.
+If `shouldSeal` is true, resultant objects will be `Object.seal`'d before being returned.
 
 #### newcons.attain(arg1, arg2, arg3) -> instance
 #### newcons(arg1, arg2, arg3...) -> instance

@@ -1,7 +1,7 @@
 module.exports = pooled
 
 function pooled(cons, should_seal) {
-  should_seal = should_seal === undefined ? true : should_seal
+  should_seal = !!should_seal
 
   var pool = []
     , len = cons.length

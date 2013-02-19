@@ -39,15 +39,11 @@ test('test pooling of simple constructor', function(assert) {
   assert.equal(Point.pooled(), 0)
   assert.equal(Point.extant(), 2)
 
-  p.w = 21
-
-  assert.strictEqual(p.w, undefined)
-
   assert.end()
 })
 
-test('test direct pooling of typed arrays fails', function(assert) {
-  var Int32 = pool(Int32Array)
+test('test direct pooling of typed arrays fails with shouldSeal=true', function(assert) {
+  var Int32 = pool(Int32Array, true)
 
   try {
     var i32 = Int32.attain(128)
